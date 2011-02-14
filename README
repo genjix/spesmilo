@@ -1,0 +1,19 @@
+# as of version 47908a890726f424371c9784b8508cff163c2c78 (Gavin Andresen) Thu Feb 10 19:24:22 2011 -0500
+#  Visual C++ compatibility fixes
+git clone https://github.com/bitcoin/bitcoin
+
+# apply the bitcoin.patch in this directory
+make -f makefile.unix bitcoind
+# copy to /usr/local/bin
+sudo cp bitcoind /usr/local/bin
+
+# install pyside for your distro, http://developer.qt.nokia.com/wiki/PySide_Binaries_Linux
+sudo add-apt-repository ppa:pyside
+sudo apt-get update
+sudo apt-get install python-pyside
+
+# run the program
+python main.py
+
+# Esperanto translation:
+#   uncomment the 5th line from the bottom of main.py
