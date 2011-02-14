@@ -24,6 +24,7 @@ class ConnectingDialog(QDialog):
 
         if parent is not None:
             self.setWindowIcon(parent.bitcoin_icon)
+        self.setWindowTitle(self.tr('Connecting...'))
         self.setAttribute(Qt.WA_DeleteOnClose, False)
         self.show()
 
@@ -119,7 +120,15 @@ class RootWindow(QMainWindow):
             # show initialising dialog
             self.tray.create_connecting()
         elif self.state == self.CLIENT_CONNECTING:
-            if self.core.is_initialised():
+            try:
+                is_init = self.core.is_initialised()
+            except IOError:
+                error = QErrorMessage()
+                error.showMessage('Internal error: failed to find bitcoin core')
+                error.exec_()
+                qApp.quit()
+                raise
+            if is_init:
                 # some voodoo here checking whether we have blocks
                 self.state = self.CLIENT_RUNNING
                 self.tray.create_cashier()
