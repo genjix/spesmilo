@@ -21,12 +21,12 @@
     <message>
         <location filename="cashier.py" line="221"/>
         <source>Send</source>
-        <translation>Elspezi</translation>
+        <translation>Sendi</translation>
     </message>
     <message>
         <location filename="cashier.py" line="222"/>
         <source>Send bitcoins to another person</source>
-        <translation>Elspezi bitmonojn al aliulo</translation>
+        <translation>Sendi bitmonon al aliulo</translation>
     </message>
     <message>
         <location filename="cashier.py" line="225"/>
@@ -60,54 +60,64 @@
 <context>
     <name>SendDialog</name>
     <message>
-        <location filename="send.py" line="18"/>
+        <location filename="send.py" line="20"/>
         <source>Pay to:</source>
         <translation>Pagi al:</translation>
     </message>
     <message>
-        <location filename="send.py" line="22"/>
+        <location filename="send.py" line="24"/>
         <source>Amount:</source>
         <translation>Sumo:</translation>
     </message>
     <message>
         <location filename="send.py" line="25"/>
         <source>Send</source>
-        <translation>Elspezi</translation>
+        <translation type="obsolete">Elspezi</translation>
     </message>
     <message>
         <location filename="send.py" line="27"/>
         <source>Cancel</source>
-        <translation>Nuligi</translation>
+        <translation type="obsolete">Nuligi</translation>
     </message>
     <message>
-        <location filename="send.py" line="34"/>
+        <location filename="send.py" line="37"/>
         <source>&lt;i&gt;Enter a bitcoin address (e.g. 1A9Pv2PYuZYvfqku7sJxovw99Az72mZ4YH)&lt;/i&gt;</source>
         <translation>&lt;i&gt;Enmetu bitmonan adreson (.ktp 1A9Pv2PYuZYvfqku7sJxovw99Az72mZ4YH)&lt;/i&gt;</translation>
     </message>
     <message>
-        <location filename="send.py" line="42"/>
+        <location filename="send.py" line="45"/>
         <source>Send bitcoins</source>
-        <translation>Sendi bitmonojn</translation>
+        <translation>Sendi bitmonon</translation>
     </message>
     <message>
-        <location filename="send.py" line="54"/>
+        <location filename="send.py" line="57"/>
         <source>Invalid address</source>
         <translation>Malvalida adreso</translation>
     </message>
     <message>
-        <location filename="send.py" line="55"/>
+        <location filename="send.py" line="58"/>
         <source>Invalid address: %s</source>
         <translation>Malvalida adreso: %s</translation>
     </message>
     <message>
-        <location filename="send.py" line="64"/>
+        <location filename="send.py" line="67"/>
         <source>Insufficient balance</source>
         <translation>Nesufiĉa saldo</translation>
     </message>
     <message>
-        <location filename="send.py" line="65"/>
+        <location filename="send.py" line="68"/>
         <source>Balance of %g is too small.</source>
         <translation>Saldo da %g estas pli malgranda.</translation>
+    </message>
+    <message>
+        <location filename="send.py" line="27"/>
+        <source>&amp;Send</source>
+        <translation>&amp;Sendi</translation>
+    </message>
+    <message>
+        <location filename="send.py" line="30"/>
+        <source>&amp;Cancel</source>
+        <translation>&amp;Nuligi</translation>
     </message>
 </context>
 <context>
@@ -130,12 +140,12 @@
     <message>
         <location filename="cashier.py" line="99"/>
         <source>Sent to %s</source>
-        <translation>Sendite al %s</translation>
+        <translation>Sendis al %s</translation>
     </message>
     <message>
         <location filename="cashier.py" line="101"/>
         <source>Received to %s</source>
-        <translation>Ricevite al %s</translation>
+        <translation>Ricevis ja %s</translation>
     </message>
     <message>
         <location filename="cashier.py" line="42"/>
@@ -173,7 +183,7 @@
     <message>
         <location filename="main.py" line="54"/>
         <source>&amp;Send funds</source>
-        <translation>&amp;Sendi monojn</translation>
+        <translation>&amp;Sendi monon</translation>
     </message>
     <message>
         <location filename="main.py" line="59"/>

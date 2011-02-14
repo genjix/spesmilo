@@ -59,53 +59,53 @@
 <context>
     <name>SendDialog</name>
     <message>
-        <location filename="send.py" line="18"/>
+        <location filename="send.py" line="20"/>
         <source>Pay to:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="send.py" line="22"/>
+        <location filename="send.py" line="24"/>
         <source>Amount:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="send.py" line="25"/>
-        <source>Send</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="send.py" line="27"/>
-        <source>Cancel</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="send.py" line="34"/>
+        <location filename="send.py" line="37"/>
         <source>&lt;i&gt;Enter a bitcoin address (e.g. 1A9Pv2PYuZYvfqku7sJxovw99Az72mZ4YH)&lt;/i&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="send.py" line="42"/>
+        <location filename="send.py" line="45"/>
         <source>Send bitcoins</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="send.py" line="54"/>
+        <location filename="send.py" line="57"/>
         <source>Invalid address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="send.py" line="55"/>
+        <location filename="send.py" line="58"/>
         <source>Invalid address: %s</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="send.py" line="64"/>
+        <location filename="send.py" line="67"/>
         <source>Insufficient balance</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="send.py" line="65"/>
+        <location filename="send.py" line="68"/>
         <source>Balance of %g is too small.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="send.py" line="27"/>
+        <source>&amp;Send</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="send.py" line="30"/>
+        <source>&amp;Cancel</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
