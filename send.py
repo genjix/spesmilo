@@ -11,6 +11,8 @@ class SendDialog(QDialog):
         self.destaddy = QLineEdit()
         self.amount = QLineEdit()
         self.amount.setAlignment(Qt.AlignRight|Qt.AlignVCenter)
+        amount_max_width = self.fontMetrics().averageCharWidth() * 10
+        self.amount.setMaximumWidth(amount_max_width)
         dv = QDoubleValidator()
         dv.setDecimals(2)
         dv.setNotation(QDoubleValidator.StandardNotation)
@@ -22,9 +24,10 @@ class SendDialog(QDialog):
         formlay.addRow(self.tr('Amount:'), amountlay)
 
         actionlay = QHBoxLayout()
-        sendbtn = QPushButton(self.tr('Send'))
+        sendbtn = QPushButton(self.tr('&Send'))
         sendbtn.clicked.connect(self.do_payment)
-        cancelbtn = QPushButton(self.tr('Cancel'))
+        sendbtn.setAutoDefault(True)
+        cancelbtn = QPushButton(self.tr('&Cancel'))
         cancelbtn.clicked.connect(self.reject)
         actionlay.addStretch()
         actionlay.addWidget(sendbtn)
