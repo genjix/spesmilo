@@ -27,5 +27,5 @@ class CoreInterface:
         return self.access.getnewaddress('')
     
     def is_initialised(self):
-        return self.access.isinitialized()
+        return self.access.getinfo()['isinitialized']
 
