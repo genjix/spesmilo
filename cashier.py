@@ -69,7 +69,8 @@ class TransactionsTable(QTableWidget):
         self.insertRow(0)
         confirms = transaction['confirmations']
         unixtime = transaction['time']
-        address = transaction['address']
+        if 'address' in transaction:
+            address = transaction['address']
         credit =  transaction['amount']
         balance = 'N/A'
         category = transaction['category']
@@ -99,6 +100,8 @@ class TransactionsTable(QTableWidget):
             description = self.tr('Sent to %s')%address
         elif category == 'receive':
             description = self.tr('Received to %s')%address
+        elif category == 'generate':
+            description = self.tr('Generated')
         trans_item = TransactionItem(description)
         self.setItem(0, 2, trans_item)
 
